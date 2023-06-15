@@ -1,3 +1,8 @@
+"""
+국민대학교 소프트웨어학부
+23-1학기 빅데이터최신기술 실습 코드
+"""
+
 class Block:
     def __init__(self, size, t_start, t_end):
         self.size = size
