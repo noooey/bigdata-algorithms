@@ -1,3 +1,8 @@
+"""
+국민대학교 소프트웨어학부
+23-1학기 빅데이터최신기술 실습 코드
+"""
+
 import random
 import matplotlib.pyplot as plt
 
@@ -13,8 +18,10 @@ class Reservoir:
         if self.size <= self.k:
             self.sampled.append(x)
         else:
-            i = random.randrange(0, self.k)
-            self.sampled[i] = x
+            i = random.randrange(0, self.size)
+            if i < self.k:
+                j = random.randrange(0, self.k)
+                self.sampled[j] = x
 
 # 시행 횟수
 num_iterations = 10000
